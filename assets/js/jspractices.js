@@ -5,17 +5,17 @@
 // yapıldığında ne kadar ödenmesi gerektiğini hesaplayıp alert ile gösterin.
 
 
-// let urunFiyati = prompt("Ürünün fiyatını girin (TL)");
-// let indirimYuzdesi = prompt("İndirim yüzdesini girin (%)");
+let urunFiyati = prompt("Ürünün fiyatını girin (TL)");
+let indirimYuzdesi = prompt("İndirim yüzdesini girin (%)");
 
 
-// let indirimMiktari = (urunFiyati * indirimYuzdesi) / 100;
+let indirimMiktari = (urunFiyati * indirimYuzdesi) / 100;
 
 
-// let indirimliFiyat = urunFiyati - indirimMiktari;
+let indirimliFiyat = urunFiyati - indirimMiktari;
 
 
-// alert("İndirimli fiyat: " + indirimliFiyat + " TL");
+alert("İndirimli fiyat: " + indirimliFiyat + " TL");
 
 // ***************************************
 
@@ -28,17 +28,17 @@
 // "Şartlı geçtiniz", 40’tan küçükse "Kaldınız" mesajını verin.
 
 
-// let vizeNotu = prompt("vize notunu giriniz");
-// let finalNotu = prompt("final notunu giriniz");
-// let vizeFinalOrt = (Number(Math.floor((vizeNotu * 0.4) + (finalNotu * 0.6))));
+let vizeNotu = prompt("vize notunu giriniz");
+let finalNotu = prompt("final notunu giriniz");
+let vizeFinalOrt = (Number(Math.floor((vizeNotu * 0.4) + (finalNotu * 0.6))));
 
-// if (vizeFinalOrt > 50 ){
-//     alert( "notunuz: " + vizeFinalOrt + " geçtiniz.");
-// }else if (vizeFinalOrt < 50 && vizeFinalOrt > 40 ) {
-//     alert( "notunuz: " + vizeFinalOrt + " şartlı geçtiniz.");
-// }else if (vizeFinalOrt < 40) {
-//     alert( "notunuz: " + vizeFinalOrt + " kaldınız :(");
-// }
+if (vizeFinalOrt > 50 ){
+    alert( "notunuz: " + vizeFinalOrt + " geçtiniz.");
+}else if (vizeFinalOrt < 50 && vizeFinalOrt > 40 ) {
+    alert( "notunuz: " + vizeFinalOrt + " şartlı geçtiniz.");
+}else if (vizeFinalOrt < 40) {
+    alert( "notunuz: " + vizeFinalOrt + " kaldınız :(");
+}
 // ***************************************
 // soru 3 
 
@@ -46,37 +46,37 @@
 // ​​​​​​​​​​Kullanıcıdan bir sayı alın ve o sayıya karşılık gelen günü 
 // yazdırın (1 = Pazartesi, 7 = Pazar). Switch case araştırabilirsiniz.
 
-// let weekDays = prompt("haftanın günlerini 1 den 7 ye kadar olacak şekilde tuşlayınız.");
-// switch (weekDays) {
-// case "1":
-//     alert("pazartesi");
-//     break;
+let weekDays = prompt("haftanın günlerini 1 den 7 ye kadar olacak şekilde tuşlayınız.");
+switch (weekDays) {
+case "1":
+    alert("pazartesi");
+    break;
 
-//     case "2":
-//     alert("salı");
-//     break;
+    case "2":
+    alert("salı");
+    break;
 
-// case "3":
-//     alert("çarşamba");
-//     break;
+case "3":
+    alert("çarşamba");
+    break;
 
-// case "4":
-//     alert("perşembe");
-//     break;
+case "4":
+    alert("perşembe");
+    break;
 
-// case "5":
-//     alert("cuma");
-//     break;
+case "5":
+    alert("cuma");
+    break;
 
-// case "6":
-//     alert("cumartesi");
-//     break;
+case "6":
+    alert("cumartesi");
+    break;
 
-// case "7":
-//     alert("pazar");
-//     break;
+case "7":
+    alert("pazar");
+    break;
 
-// }
+}
 
 
 // ***************************************
@@ -87,19 +87,19 @@
 // Büyük Sayıyı Bulma:
 // Kullanıcıdan üç sayı alarak, bu sayılardan en büyüğünü bulan bir program yazın.
 
-// let sayi1 = prompt("1.sayıyı giriniz.");
-// let sayi2 = prompt("2.sayıyı giriniz.");
-// let sayi3 = prompt("3.sayıyı giriniz.");
+let sayi1 = prompt("1.sayıyı giriniz.");
+let sayi2 = prompt("2.sayıyı giriniz.");
+let sayi3 = prompt("3.sayıyı giriniz.");
 
 
-// if ((sayi1 > sayi2) && (sayi1 > sayi3)) {
-// alert("en büyük sayı: " + sayi1);
-// }else if (sayi2 > sayi1 && sayi2 > sayi3) {
-//     alert("en büyük sayı : " + sayi2);
-// }else 
-// alert("en büyük sayı: " + sayi3);
+if ((sayi1 > sayi2) && (sayi1 > sayi3)) {
+alert("en büyük sayı: " + sayi1);
+}else if (sayi2 > sayi1 && sayi2 > sayi3) {
+    alert("en büyük sayı : " + sayi2);
+}else 
+alert("en büyük sayı: " + sayi3);
 
-//*********************************************
+// *********************************************
 
 // soru 5
 
@@ -108,15 +108,15 @@
 // çevirin (Örn: 3661 saniye = 1 saat, 1 dakika, 1 saniye).​​​​​​
 
 
-// let kullaniciCevap = prompt("saniye giriniz");
-// let saat = kullaniciCevap / 3600;
-// let kalanSaniye = kullaniciCevap % 3600;
-// let kalanDakika = kalanSaniye / 60;
-// let saniye = kalanSaniye % 60;
-// console.log("saat: " + Math.floor(saat)  + " " + "dakika: " + Math.floor(kalanDakika) + " "  + "saniye: "  + Math.floor (saniye));
+let kullaniciCevap = prompt("saniye giriniz");
+let saat = kullaniciCevap / 3600;
+let kalanSaniye = kullaniciCevap % 3600;
+let kalanDakika = kalanSaniye / 60;
+let saniye = kalanSaniye % 60;
+console.log("saat: " + Math.floor(saat)  + " " + "dakika: " + Math.floor(kalanDakika) + " "  + "saniye: "  + Math.floor (saniye));
 
 
-//***************************************** 
+// ***************************************** 
 
 // soru 6 
 
@@ -125,27 +125,27 @@
 // cinsinden hesaplayan bir program yazın.
 
 
-// let dogumYili = Number(prompt("Doğum yılınızı sayı olarak giriniz: "));
-// let dogumAyi = Number(prompt("Doğum ayınızı sayı olarak giriniz: "));
-// let dogumGunu = Number(prompt("Doğum gününüzü sayı olarak giriniz: "));
-// let bugun = new Date();
-// let gun = bugun.getDate();
-// let ay = bugun.getMonth();
-// let yil = bugun.getFullYear();
-// let kullaniciYasi = yil - dogumYili;
-// let kullaniciAyi = ay - dogumAyi;
-// let kullaniciGun = gun - dogumGunu;
+let dogumYili = Number(prompt("Doğum yılınızı sayı olarak giriniz: "));
+let dogumAyi = Number(prompt("Doğum ayınızı sayı olarak giriniz: "));
+let dogumGunu = Number(prompt("Doğum gününüzü sayı olarak giriniz: "));
+let bugun = new Date();
+let gun = bugun.getDate();
+let ay = bugun.getMonth();
+let yil = bugun.getFullYear();
+let kullaniciYasi = yil - dogumYili;
+let kullaniciAyi = ay - dogumAyi;
+let kullaniciGun = gun - dogumGunu;
 
-// if (ay < dogumAyi) {
-//   kullaniciYasi -= 1;
-//   kullaniciAyi += 12;
-//   console.log(kullaniciYasi + ' ' + kullaniciAyi + ' ' + kullaniciGun);
-// }
-// if(gun < dogumGunu){
-//   kullaniciAyi -= 1;
-//   kullaniciGun += new Date(yil, ay, 0).getDate();
-//   console.log("yaşın: " + kullaniciYasi + ' ' + "geçen ay: " + kullaniciAyi + ' ' + "geçen gün: " +  kullaniciGun);
-// }
+if (ay < dogumAyi) {
+  kullaniciYasi -= 1;
+  kullaniciAyi += 12;
+  console.log(kullaniciYasi + ' ' + kullaniciAyi + ' ' + kullaniciGun);
+}
+if(gun < dogumGunu){
+  kullaniciAyi -= 1;
+  kullaniciGun += new Date(yil, ay, 0).getDate();
+  console.log("yaşın: " + kullaniciYasi + ' ' + "geçen ay: " + kullaniciAyi + ' ' + "geçen gün: " +  kullaniciGun);
+}
 
 // *********************************************
 
@@ -153,12 +153,12 @@
 // Saatlik Ücret Hesaplama:Kullanıcıdan çalıştığı saat sayısını ve saat 
 // başı ücretini alarak toplam kazancını hesaplayın.
 
-// let calısmaSaati = Number(prompt("günde ne kadar saat çalışıyorsun?"));
-// let saatlikUcret = Number(prompt("saatlik ücretini söyler misin?"));
+let calısmaSaati = Number(prompt("günde ne kadar saat çalışıyorsun?"));
+let saatlikUcret = Number(prompt("saatlik ücretini söyler misin?"));
 
-// alert( "günlük ücret: " + saatlikUcret * calısmaSaati);
+alert( "günlük ücret: " + saatlikUcret * calısmaSaati);
 
-//***********************************
+// ***********************************
 
 // soru 8 
 
@@ -166,16 +166,16 @@
 // Kullanıcıdan kredi miktarını ve taksit sayısını alarak aylık taksiti hesaplayın.
 // v2 toplam faiz oranını da sorup aylık faizli taksiti hesaplayın.
 
-// let krediMiktari = Number(prompt("istediğiniz kredi miktarını giriniz."));
-// let taksitSayisi = Number(prompt("taksit sayısını giriniz."));
+let krediMiktari = Number(prompt("istediğiniz kredi miktarını giriniz."));
+let taksitSayisi = Number(prompt("taksit sayısını giriniz."));
 
-// alert("aylık taksitiniz: " +  krediMiktari / taksitSayisi + " TL");
+alert("aylık taksitiniz: " +  krediMiktari / taksitSayisi + " TL");
 
-// let krediMiktari = Number(prompt("istediğiniz kredi miktarını giriniz."));
-// let taksitSayisi = Number(prompt("taksit sayısını giriniz."));
-// let faizOranı = Number(prompt("faiz oranını giriniz. "));
+let krediMiktari1 = Number(prompt("istediğiniz kredi miktarını giriniz."));
+let taksitSayisi2 = Number(prompt("taksit sayısını giriniz."));
+let faizOranı = Number(prompt("faiz oranını giriniz. "));
 
-// alert(Number(((krediMiktari * (faizOranı / 100)) + krediMiktari)) / taksitSayisi);
+alert(Number(((krediMiktari * (faizOranı / 100)) + krediMiktari)) / taksitSayisi);
 
 // *************************************
 
@@ -185,16 +185,16 @@
 // Eğer kullanıcı adı "admin" ve şifre "1234" ise “Giriş başarılı” mesajı verin,
 //  aksi halde “Kullanıcı adı veya şifre hatalı” deyin.
 
-// let kullaniciAdi = prompt ("kullanıcı adını giriniz");
-// let sifre = prompt("sifreyi giriniz.");
+let kullaniciAdi = prompt ("kullanıcı adını giriniz");
+let sifre = prompt("sifreyi giriniz.");
 
-// if (kullaniciAdi == "admin" && sifre == "1234") {
-//  alert("Giriş başarılı")
-// }else {
-//     alert("Kullanıcı adı veya şifre hatalı");
-// }
+if (kullaniciAdi == "admin" && sifre == "1234") {
+ alert("Giriş başarılı")
+}else {
+    alert("Kullanıcı adı veya şifre hatalı");
+}
 
-//************************************ 
+// ************************************ 
 
 // // soru 10
 
@@ -205,13 +205,13 @@
 // // 100 TL'lik satış bedelini toplam satış bedeli için kdv dahil
 //  120 TL olarak hesaplarız. Eğer maliyet olduysa (satış bedeli - maliyet) + kdv olacak.
 
-// let satisBedeli = Number(prompt("satış bedelini giriniz."));
-// let maliyet = Number(prompt("maliyeti giriniz"));
-// let kdv = (satisBedeli * 0.2);
-// let toplamSatisBedeli = (satisBedeli + kdv);
-// let kar = (satisBedeli - maliyet);
-// let netKar = kar - (satisBedeli * 0.25);
-// console.log ('kdv dahil toplam: ' + toplamSatisBedeli + ' ' + 'NET KAR: ' + netKar);
+let satisBedeli = Number(prompt("satış bedelini giriniz."));
+let maliyet = Number(prompt("maliyeti giriniz"));
+let kdv = (satisBedeli * 0.2);
+let toplamSatisBedeli = (satisBedeli + kdv);
+let kar = (satisBedeli - maliyet);
+let netKar = kar - (satisBedeli * 0.25);
+console.log ('kdv dahil toplam: ' + toplamSatisBedeli + ' ' + 'NET KAR: ' + netKar);
 
 
 
